@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body><br>
+<br>
+<center>
+    <h1> {{msg}} </h1>
+<table>
+    <tr>
+
+        <th>Word</th>
+        <th>Count</th>
+
+    </tr>
+    {% for i in d %}
+    <tr>
+
+        <td>{{i.0}}</td>
+        <td>{{i.1}}</td>
+
+    </tr>
+    {% endfor %}
+
+</table>
+</center>
+</body>
+</html>

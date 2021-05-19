@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frequency Counter</title>
+</head>
+<body>
+<center>
+    <form action="/result" method="post">
+        {% csrf_token %}
+        <h5>Enter url to find word frequency:</h5>
+        <input type="text" name="url" required>
+        <button type="submit" name="submit" >Count</button>
+    </form>
+</center>
+</body>
+</html>
